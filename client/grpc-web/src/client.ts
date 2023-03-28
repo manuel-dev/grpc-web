@@ -324,7 +324,7 @@ class GrpcClient<TRequest extends ProtobufMessage, TResponse extends ProtobufMes
       this.props.debug && debug("request.abort aborting request");
       this.transport.cancel();
     } else {
-      throw new Error("Client already closed - cannot .close()");
+      
     }
   }
 }
